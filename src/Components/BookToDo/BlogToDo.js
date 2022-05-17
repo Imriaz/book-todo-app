@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Button, Card, Form } from "react-bootstrap";
-import "./BookToDo.css";
+import "./BlogToDo.css";
 
-const BookToDo = () => {
+const BlogToDo = () => {
   const [todos, setTodos] = useState([
     {
-      text: "Welcome to To Book Do app, This is sample Book todo list what should you want to read today!",
+      text: "Welcome to To Blog Do app, This is sample Blog todo list what should you want to Visit!",
     },
   ]);
 
@@ -37,14 +37,14 @@ const BookToDo = () => {
     return (
       <Form onSubmit={handleSubmit}>
         <Form.Label>
-          <b>Add Book Todo</b>
+          <b className="add__todo__title">Add Blog Todo</b>
         </Form.Label>
         <Form.Control
           type="text"
           className="input"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          placeholder="Add new Book todo list"
+          placeholder="Add new Blog todo list"
         />
         <br />
         <Button className="submit__button" type="submit">
@@ -67,7 +67,7 @@ const BookToDo = () => {
 
   return (
     <div className="container book__todo">
-      <h1 className="text-center mb-4 book__todo__heading">Book Todo List</h1>
+      <h1 className="text-center mb-4 book__todo__heading">Blog Todo List</h1>
       <FormTodo addTodo={addTodo} />
       <div>
         {todos.map((todo, index) => (
@@ -87,4 +87,4 @@ const BookToDo = () => {
   );
 };
 
-export default BookToDo;
+export default BlogToDo;

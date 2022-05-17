@@ -1,0 +1,29 @@
+.blog__title {
+  color: blue;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.blogs__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.pageNo__container button {
+  color: black;
+  height: 30px;
+  width: 50px;
+  margin-right: 20px;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+.blogs__show {
+  border: 3px solid orange;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding-top:50px;
+  background-color: white;
+}

@@ -1,0 +1,12 @@
+.card__blog{
+    width: 300px;
+    height: 250px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    background-color: rgb(179, 244, 89);
+    margin-left: 30px;
+}
+
+.card__title{
+    color: blueviolet;
+}
